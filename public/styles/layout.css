@@ -43,7 +43,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 1.5em;
-  background-color: #0c3ab9;
+  background-color: #4056A1;
   height: 120px;
   border-bottom: 1px solid #545149;
 }
@@ -52,7 +52,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #0c3ab9;
 }
 
 .new-tweet-text {

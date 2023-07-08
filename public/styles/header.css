@@ -1,0 +1,11 @@
+header {
+  display: flex;
+  padding-top: 120px;
+  height: 520px;
+  background-color: #a36d00;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+}
+
+.profile-pic {
+  padding-top: 1em;
+}

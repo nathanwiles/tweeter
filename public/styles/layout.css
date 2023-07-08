@@ -23,3 +23,15 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ 
+ * {
+   font-family: 'Source Sans 3', sans-serif;
+  }
+  
+  .logo {
+    font-family: 'Bungee', sans-serif;
+    color: #545149;
+    margin: 0;
+    padding: 0;  
+}

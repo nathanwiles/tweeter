@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="styles/header.css" type="text/css" />
     <link rel="stylesheet" href="styles/main.css" type="text/css" />
-
+  
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -56,33 +56,20 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      I'm baby pitchfork marfa flannel, franzen beard live-edge enamel pin
-      neutral milk hotel semiotics chambray pariatur man bun tote bag cronut
-      vibecession. Blog taiyaki neutra, sint disrupt nisi readymade culpa
-      cornhole whatever adaptogen wayfarers meditation viral. Raw denim
-      slow-carb lumbersexual seitan schlitz ramps austin. Taxidermy banh mi
-      swag, big mood magna photo booth echo park four dollar toast fixie
-      live-edge williamsburg. Narwhal viral williamsburg locavore post-ironic
-      drinking vinegar sus. Enamel pin normcore magna tattooed. Art party
-      succulents celiac coloring book authentic adaptogen hot chicken jean
-      shorts ut qui pinterest JOMO grailed. Kitsch beard vibecession seitan
-      direct trade bitters celiac fam. Slow-carb velit tousled bespoke, blog yes
-      plz commodo vinyl ad enamel pin vibecession jean shorts. Pug kale chips
-      waistcoat, ut viral cliche pour-over enamel pin kombucha in yuccie.
-      Grailed church-key mustache listicle blue bottle solarpunk. Pour-over meh
-      JOMO seitan taiyaki snackwave, bruh palo santo hoodie gatekeep flannel
-      bushwick quinoa chia scenester. Pariatur intelligentsia blue bottle
-      hexagon retro aute. Lomo bitters church-key ethical wolf pitchfork
-      intelligentsia gentrify fit. Bushwick microdosing meggings, chillwave
-      adaptogen 8-bit ascot live-edge in DSA consectetur. Aesthetic gastropub
-      af, kombucha normcore edison bulb tofu +1 microdosing freegan fixie.
-      Bespoke tilde gorpcore, neutral milk hotel plaid jawn magna sunt hexagon
-      est narwhal stumptown. Edison bulb crucifix blog, yuccie sartorial twee
-      narwhal everyday carry dolor laboris skateboard yr bruh hammock.
-      Lumbersexual taxidermy est esse four loko anim synth farm-to-table air
-      plant chillwave. Church-key mlkshk velit yr mustache +1 subway tile
-      blackbird spyplane. Venmo try-hard chartreuse you probably haven't heard
-      of them iPhone, laboris vape nostrud la croix neutra celiac etsy hammock.
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form action="/tweets" method="post">
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
+          <div>
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
+
+
+
     </main>
   </body>
 </html>

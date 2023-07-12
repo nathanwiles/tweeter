@@ -1,0 +1,41 @@
+section {
+  display: flex;
+  width : 100%;
+  flex-direction: column;
+  margin: 1em auto;
+}
+
+label {
+  display : none;
+}
+#tweet-text {
+  width: 100%;
+  height: 50px;
+  resize: none;
+  border: none;
+  border-bottom: black 5px solid;
+  background-color: #f4f1ec;
+}
+
+.tweet-ui {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Bungee", sans-serif;
+  font-size: 1em;
+  margin-top: .5em;
+}
+
+.tweet-ui button {
+  padding: 0.25em .5em;
+  border: none;
+  background-color: #4056A1;
+  color: #ffff;
+}
+
+.tweet-ui .counter {
+  padding: 0.175em 0em;
+  font-family: inherit;
+  font-size: 1em;
+  color: #393731;
+}
+

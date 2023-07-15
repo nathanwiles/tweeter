@@ -1,7 +1,8 @@
 /**
  * @file
  * @description contains the JS code for tweeter client. Author: Nathan Wiles.
- *
+ * @requires ./helpers/get-time-since.js must be included before this file in html.
+ * 
  */
 
 $(document).ready(function () {
@@ -14,6 +15,7 @@ $(document).ready(function () {
    */
 
   const createTweetElement = function (tweet) {
+    const timeSince = getTimeSince(tweet.created_at);
     const $tweet = $(`
       <article class="tweet">
         <header> 
@@ -27,7 +29,7 @@ $(document).ready(function () {
           <p>${tweet.content.text}</p>
         </div>
         <nav class="footer">
-          <div class="tweet-timestamp"> ${tweet.created_at} </div>
+          <div class="tweet-timestamp"> ${timeSince} </div>
           <nav class="tweet-icons">
             <i class="fas fa-flag icon"></i>
             <i class="fas fa-retweet icon"></i>

@@ -44,8 +44,10 @@ $(document).ready(function () {
 
   /**
    * @param {array} tweets
+   * 
    * @description loops through tweets calls createTweetElement for each tweet.
    * @side_effect appends each tweet to the #tweets-container.
+   * 
    * @returns {void}
    */
 

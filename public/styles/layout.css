@@ -30,15 +30,11 @@ body {
   font-family: "Source Sans 3", sans-serif;
 }
 
-.bungee {
-  font-family: "Bungee", sans-serif;
-  font-size: 2em;
-}
-
-.centered-column {
+body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .red {

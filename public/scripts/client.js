@@ -16,17 +16,24 @@ $(document).ready(function () {
   const createTweetElement = function (tweet) {
     const $tweet = $(`
       <article class="tweet">
-        <header class="tweet header"> 
-          <span>${tweet.user.avatars}</span>
-          <span>${tweet.user.name}</span> 
+        <header> 
+          <span class="user-info">
+          <img src='${tweet.user.avatars}'></img>
+          <span class="user-name">${tweet.user.name}</span>
+          </span> 
+          <span class="user-handle">${tweet.user.handle}</span>
         </header>
-        <div class="tweet body">
+        <div class="text">
           <p>${tweet.content.text}</p>
         </div>
-        <footer class="tweet footer>
-          <span>${tweet.user.handle}</span>
-          <span>${tweet.created_at}</span>
-        </footer> 
+        <nav class="footer">
+          <div class="tweet-timestamp"> ${tweet.created_at} </div>
+          <nav class="tweet-icons">
+            <i class="fas fa-flag icon"></i>
+            <i class="fas fa-retweet icon"></i>
+            <i class="fas fa-heart icon"></i>
+          </nav>
+        </nav> 
       </article>
     `);
 

@@ -35,6 +35,7 @@
     <script type="text/javascript" src="/scripts/helpers/create-tweet.js"></script>
     <script type="text/javascript" src="/scripts/helpers/render-tweets.js"></script>
     <script type="text/javascript" src="/scripts/helpers/get-time-since.js"></script>
+    <script type="text/javascript" src="/scripts/helpers/submit-tweet.js"></script>
     <script
       type="text/javascript"
       src="/scripts/helpers/composer-char-counter.js"
@@ -68,7 +69,7 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <form>
+        <form id="new-tweet-form">
           <label for="new-tweet-text">What are you humming about?</label>
           <textarea name="text" id="new-tweet-text"></textarea>
           <div class="tweet-ui">

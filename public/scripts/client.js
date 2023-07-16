@@ -20,7 +20,7 @@ $(document).ready(function () {
       <article class="tweet">
         <header> 
           <span class="user-info">
-          <img src='${tweet.user.avatars}'></img>
+          <img src='${tweet.user.avatars}' alt="${tweet.user.name}'s picture" ></img>
           <span class="user-name">${tweet.user.name}</span>
           </span> 
           <span class="user-handle">${tweet.user.handle}</span>

@@ -25,18 +25,20 @@ const validateTweet = function (tweetText) {
  */
 
 $(document).ready(function () {
-$("#new-tweet-form").on('submit', function (event) {
-  event.preventDefault();
+  $("#new-tweet-form").on("submit", function (event) {
+    event.preventDefault();
     const tweetText = $("#new-tweet-text").val();
     if (validateTweet(tweetText)) {
       $.ajax({
         url: "/tweets",
         method: "POST",
         data: $(this).serialize(),
-      })
-      .then(() => {
-        renderTweets()
-      })
+        success: () => {
+          $("#new-tweet-text").val("");
+          $("#new-tweet-form output.counter").text("140");
+          loadTweets();
+        }
+      });
     }
   });
 });

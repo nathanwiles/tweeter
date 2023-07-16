@@ -16,12 +16,10 @@
     dataType: "json",
   })
   .then((data) => {
+    $("#tweets-container").empty();
     for (const tweet of data) {
       const $tweet = createTweetElement(tweet);
       $("#tweets-container").prepend($tweet);
     }
   })
-  .error((err) => {
-    console.log(err);
-  });
 };

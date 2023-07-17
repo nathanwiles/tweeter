@@ -1,3 +1,4 @@
+import { helpers } from "./index.js";
 /**
  * @requires jQuery
  * @requires ./helpers/render-tweets must be included before this file in html.
@@ -8,13 +9,13 @@
  * 
  */
 
-const loadTweets = function () {
+export const loadTweets = function () {
   $.ajax({
     url: "/tweets",
     method: "GET",
     dataType: "json",
     success: (data) => {
-      renderTweets(data);
+      helpers.renderTweets(data);
     }
 
   })

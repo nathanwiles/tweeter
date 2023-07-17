@@ -6,7 +6,7 @@
    * @returns \<artictle class="tweet"\>
    */
 
-const createTweetElement = function (tweet) {
+export const createTweetElement = function (tweet) {
   // control for cross-site scripting
   const tweetText = $("<p>").text(tweet.content.text).html();
   

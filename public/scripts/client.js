@@ -1,10 +1,13 @@
+import { helpers } from "./helpers/index.js";
+
 /**
  * @file
- * @description contains the JS code for tweeter client. Author: Nathan Wiles.
- * @requires ./helpers/load-tweets must be included before this file in html.
+ * @description renders tweets on page load, all other functionality is the result of event handlers and helpers. Author: Nathan Wiles.
  *
  */
 
+
 $(document).ready(function () {
-  loadTweets();
+  // load tweets on page load
+  helpers.loadTweets();
 });

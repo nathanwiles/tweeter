@@ -1,3 +1,5 @@
+import { helpers } from "./index.js";
+
 /**
  * @requires jQuery
  * @requires ./helpers/create-tweet-element
@@ -9,11 +11,12 @@
  * @returns {void}
  */
 
-const renderTweets = function (data) {
+
+export const renderTweets = function (data) {
   $("#tweets-container").empty();
 
   for (const tweet of data) {
-    const $tweet = createTweetElement(tweet);
+    const $tweet = helpers.createTweetElement(tweet);
     $("#tweets-container").prepend($tweet);
   }
   

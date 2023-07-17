@@ -7,6 +7,7 @@
    */
 
 const createTweetElement = function (tweet) {
+  const tweetText = $("<p>").text(tweet.content.text).html();
   const timeSince = timeago.format(tweet.created_at);
   const $tweet = $(`
     <article class="tweet">
@@ -20,7 +21,7 @@ const createTweetElement = function (tweet) {
       </header>
 
       <div class="text">
-        <p>${tweet.content.text}</p>
+        <p>${tweetText}</p>
       </div>
 
       <nav class="footer">

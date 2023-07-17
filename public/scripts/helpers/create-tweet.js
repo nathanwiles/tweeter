@@ -7,7 +7,9 @@
    */
 
 const createTweetElement = function (tweet) {
+  // control for cross-site scripting
   const tweetText = $("<p>").text(tweet.content.text).html();
+  
   const timeSince = timeago.format(tweet.created_at);
   const $tweet = $(`
     <article class="tweet">

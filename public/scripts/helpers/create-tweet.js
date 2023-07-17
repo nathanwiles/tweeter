@@ -7,7 +7,7 @@
    */
 
 const createTweetElement = function (tweet) {
-  const timeSince = getTimeSince(tweet.created_at);
+  const timeSince = timeago.format(tweet.created_at);
   const $tweet = $(`
     <article class="tweet">
 

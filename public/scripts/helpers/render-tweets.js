@@ -1,6 +1,6 @@
 /**
  * @requires jQuery
- * @requires createTweetElement()
+ * @requires ./helpers/create-tweet-element
  *
  * @param {array} tweets
  * @description Loops through tweets calling createTweetElement() for each tweet.

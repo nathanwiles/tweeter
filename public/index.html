@@ -37,7 +37,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- App JS -->
+
+    <!-- Helpers-->
     <script
       type="text/javascript"
       src="/scripts/helpers/create-tweet-element.js"
@@ -63,8 +64,9 @@
       src="/scripts/helpers/composer-char-counter.js"
     ></script>
 
+    <!-- App JS-->
     <script type="text/javascript" src="/scripts/client.js"></script>
-    
+
   </head>
 
   <body>
@@ -96,6 +98,8 @@
         <form id="new-tweet-form">
           <label for="new-tweet-text">What are you humming about?</label>
           <textarea name="text" id="new-tweet-text"></textarea>
+          <aside id="invalid-text-alert"></aside>
+
           <div class="tweet-ui">
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>

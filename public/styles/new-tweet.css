@@ -1,6 +1,6 @@
 .new-tweet {
   display: flex;
-  width: 100%;
+  width: 90%;
   flex-direction: column;
   margin: 1em auto;
   font-weight: bold;

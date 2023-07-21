@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="styles/header.css" type="text/css" />
     <link rel="stylesheet" href="styles/main.css" type="text/css" />
     <link rel="stylesheet" href="styles/new-tweet.css" type="text/css" />
-    <link rel="stylesheet" href="styles/tweet.css" type="text/css" />
+    <link rel="stylesheet" href="styles/tweets.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -48,7 +48,7 @@
       src="/scripts/event-handlers/composer-char-counter.js"
     ></script>
     <!-- App JS-->
-   
+
     <script type="module" src="/scripts/client.js"></script>
   </head>
 
@@ -64,33 +64,40 @@
       </nav>
     </nav>
 
-    <header class="user-profile">
-      <section class="profile-container">
-        <div class="profile-pic">
-          <img src="/images/profile-hex.png" />
-        </div>
-        <div>
-          <h2>Lauren Yipson</h2>
-        </div>
-      </section>
-    </header>
-
     <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <form id="new-tweet-form">
-          <label for="new-tweet-text">What are you humming about?</label>
-          <textarea name="text" id="new-tweet-text" class="dark-border-bottom"></textarea>
-          <aside id="invalid-text-alert"></aside>
-
-          <div class="tweet-ui">
-            <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
+    <main class="content-container">
+      <header class="user-profile">
+        <section class="profile-container">
+          <div class="profile-pic">
+            <img src="/images/profile-hex.png" />
           </div>
-        </form>
-      </section>
+          <div>
+            <h2>Lauren Yipson</h2>
+          </div>
+        </section>
+      </header>
 
-      <section id="tweets-container" class="tweets-container"></section>
+      <div class="timeline">
+        <section class="new-tweet">
+          <form id="new-tweet-form">
+            <label for="new-tweet-text">What are you humming about?</label>
+            <textarea
+              name="text"
+              id="new-tweet-text"
+              class="dark-border-bottom"
+            ></textarea>
+            <aside id="invalid-text-alert"></aside>
+
+            <div class="tweet-ui">
+              <button type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text"
+                >140</output
+              >
+            </div>
+          </form>
+        </section>
+        <section id="tweets-container" class="tweets-container"></section>
+      </div>
     </main>
   </body>
 </html>

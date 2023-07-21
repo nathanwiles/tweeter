@@ -19,7 +19,6 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      width: 100%;
     }
     .user-name {
       margin: 0 0.5rem;
@@ -30,6 +29,8 @@
     }
     .header {
       display: flex;
+      flex-direction: row;
+      justify-content: space-between;
       width: 100%;
       align-items: center;
     }

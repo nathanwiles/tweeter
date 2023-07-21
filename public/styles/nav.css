@@ -6,8 +6,8 @@
   color: #ffffff;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1.5em;
-  background-color: #4056A1;
+  padding: 0 1.5rem;
+  background-color: #4056a1;
   height: 120px;
   border-bottom: 1px solid #545149;
 }
@@ -19,6 +19,15 @@
 }
 
 .big-logo {
-  font-size: 2em;
+  font-size: 2rem;
   font-family: "Bungee", sans-serif;
 }
+
+/* tablet nav */
+@media only screen and (max-width: 1024px) {
+  .nav-bar {
+    background-color: transparent;
+    border: none;
+  }
+}
+

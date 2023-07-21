@@ -14,7 +14,7 @@ export const createTweetElement = function (tweet) {
   const $tweet = $(`
     <article class="tweet">
 
-      <header> 
+      <header class="header"> 
         <span class="user-info">
           <img src='${tweet.user.avatars}' alt="${tweet.user.name}'s picture" ></img>
           <span class="user-name">${tweet.user.name}</span>

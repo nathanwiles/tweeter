@@ -3,9 +3,14 @@ import { helpers } from "../helpers/index.js";
 /**
  * @requires jQuery
  * 
- * @description #new-tweet-form submission handler.
+ * @description #new-tweet-form submission handler. checks if the tweet is valid.
  * 
+ * @valid_tweet 
  * @side_effect sends an ajax POST request to '/tweets'.
+ * @side_effect clears the #new-tweet-text textarea.
+ * 
+ * @invalid_tweet
+ * @side_effect validate tweet will render an error message.
  * @returns {void}
  */
 

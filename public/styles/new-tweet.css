@@ -1,12 +1,13 @@
+
 .new-tweet {
-  display: flex;
+  display: none;
   width: 100%;
   flex-direction: column;
-  margin: 1em auto;
+  margin-top: 3rem;
   font-weight: bold;
 
   #new-tweet-form {
-    
+
     #new-tweet-text.red-border-bottom {
       border-bottom: #ff0000 0.2em solid;
     }
@@ -56,5 +57,6 @@
 @media only screen and (min-width: 1024px) {
   .new-tweet {
     margin: 0;
+    margin-bottom: 3rem;
   }
 }

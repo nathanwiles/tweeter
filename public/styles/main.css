@@ -25,11 +25,10 @@
     justify-content: space-between;
     margin-top: 120px;
     padding: 5%;
-    .timeline
-    {
-      margin-left:  10%;
-    }
+  }
+  .timeline {
+    margin: 0;
+    margin-left:  10%;
 
-    
   }
 }

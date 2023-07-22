@@ -19,7 +19,7 @@ export const flagTweetError = (message) => {
     `<i class='fas fa-exclamation-triangle'></i><span>${message}</span>`
   );
 
-  $invalidTextAlert.show().slideDown();
+  $invalidTextAlert.slideDown('slow');
 
   // change bottom border of tweet-text box to red.
   $newTweetText.removeClass("dark-border-bottom");

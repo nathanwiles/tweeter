@@ -1,13 +1,12 @@
+@import "global-variables";
+
 .user-profile {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  @include flex-column-hor-vert-aligned;
   width: 100%;
-  justify-content: center;
-  height: 400px;
-  color: #ffffff;
-  background-color: #a36d00;
-  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+  height: 400px + $nav-bar-height;
+  color: $inverse-text-color;
+  background-color: $profile-background-color;
+  background-image: $profile-background-image;
   .user-name h2 {
     font-size: 2rem;
     margin: 0;
@@ -18,7 +17,7 @@
 
 @media only screen and (min-width: 1024px) {
   .user-profile {
-    justify-content: center;
+    @include flex-row-center-aligned;
     width: 60%;
     height: 400px;
     

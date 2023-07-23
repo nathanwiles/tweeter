@@ -10,6 +10,9 @@
 
   #new-tweet-form {
     @include flex-column;
+    .red{
+      color: $pretty-red;
+    }
     #new-tweet-text.red-border-bottom {
       border-bottom: $pretty-red 0.2em solid;
     }

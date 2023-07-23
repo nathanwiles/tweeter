@@ -12,6 +12,9 @@
   display: flex;
   flex-direction: column;
 }
+.new-tweet #new-tweet-form .red {
+  color: #d41616;
+}
 .new-tweet #new-tweet-form #new-tweet-text.red-border-bottom {
   border-bottom: #d41616 0.2em solid;
 }

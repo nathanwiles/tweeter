@@ -1,57 +1,55 @@
-
 .new-tweet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   display: none;
   width: 100%;
-  flex-direction: column;
   margin-top: 3rem;
   font-weight: bold;
-
-  #new-tweet-form {
-    display: flex;
-    flex-direction: column;
-    #new-tweet-text.red-border-bottom {
-      border-bottom: #ff0000 0.2em solid;
-    }
-    
-    #new-tweet-text.dark-border-bottom {
-    border-bottom: #393731 0.2em solid;
-    }
-    
-    #new-tweet-text {
-      width: 100%;
-      height: 50px;
-      resize: none;
-      border: none;
-      color: #393731;
-      font-weight: regular;
-      background-color: #f4f1ec;
-    }
-    .tweet-ui {
-      display: flex;
-      justify-content: space-between;
-      font-family: "Bungee", sans-serif;
-      font-size: 1rem;
-      margin-top: 0.5rem;
-      .submit-tweet {
-        padding: 0.25rem 0.5rem;
-        border: none;
-        background-color: #4056a1;
-        color: #ffff;
-      }
-      .counter {
-        padding: 0.175em 0rem;
-        font-family: inherit;
-        font-size: 1rem;
-      }
-    }
-  
-    #invalid-text-alert {
-      display: none;
-      color: red;
-      font-size: 0.8rem;
-    }
-    
-  }
+}
+.new-tweet #new-tweet-form {
+  display: flex;
+  flex-direction: column;
+}
+.new-tweet #new-tweet-form #new-tweet-text.red-border-bottom {
+  border-bottom: #d41616 0.2em solid;
+}
+.new-tweet #new-tweet-form #new-tweet-text.dark-border-bottom {
+  border-bottom: #545149 0.2em solid;
+}
+.new-tweet #new-tweet-form #new-tweet-text {
+  width: 100%;
+  height: 50px;
+  resize: none;
+  border: none;
+  color: #545149;
+  font-weight: 300;
+  background-color: #f4f1ec;
+}
+.new-tweet #new-tweet-form .tweet-ui {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Bungee", sans-serif;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+.new-tweet #new-tweet-form .tweet-ui .submit-tweet {
+  padding: 0.25rem 0.5rem;
+  border: none;
+  background-color: #4056a1;
+  color: #ffffff;
+}
+.new-tweet #new-tweet-form .tweet-ui .counter {
+  font-family: "Bungee", sans-serif;
+  padding: 0.175em 0rem;
+  font-size: 1rem;
+}
+.new-tweet #new-tweet-form #invalid-text-alert {
+  display: none;
+  color: #d41616;
+  font-size: 0.8rem;
 }
 
 /* desktop styles */

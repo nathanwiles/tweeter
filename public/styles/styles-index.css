@@ -1,8 +1,9 @@
+/* Page layout */
 /*
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- * https://css-tricks.com/international-box-sizing-awareness-day/
- * Do not modify these two selectors, please
- */
+* http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+* https://css-tricks.com/international-box-sizing-awareness-day/
+* Do not modify these two selectors, please
+*/
 html {
   box-sizing: border-box;
 }
@@ -37,12 +38,13 @@ body {
   width: 100%;
 }
 
-/* desktop styles */
+/* Desktop layout */
 @media only screen and (min-width: 1024px) {
   body {
     overflow: hidden;
   }
 }
+/* Nav bar */
 .nav-bar {
   display: flex;
   flex-direction: row;
@@ -54,8 +56,8 @@ body {
   height: 120px;
   padding: 0 1.5rem;
   color: #ffffff;
-  background-color: #4056a1;
-  border-bottom: 1px solid #545149;
+  background-color: transparent;
+  border: none;
 }
 .nav-bar .nav-new-tweet {
   display: flex;
@@ -81,13 +83,14 @@ body {
     transform: translateY(0);
   }
 }
-/* tablet nav */
-@media only screen and (max-width: 1023px) {
+/* Desktop nav */
+@media only screen and (min-width: 1024px) {
   .nav-bar {
-    background-color: transparent;
-    border: none;
+    background-color: #4056a1;
+    border-bottom: 1px solid #545149;
   }
 }
+/* User profile */
 .user-profile {
   display: flex;
   flex-direction: column;
@@ -105,7 +108,7 @@ body {
   text-align: center;
 }
 
-/* desktop styles */
+/* Desktop user profile */
 @media only screen and (min-width: 1024px) {
   .user-profile {
     display: flex;
@@ -118,6 +121,7 @@ body {
     margin: 1.5rem;
   }
 }
+/* Content container */
 .content-container {
   display: flex;
   flex-direction: column;
@@ -133,7 +137,7 @@ body {
   width: 90%;
 }
 
-/* desktop styles */
+/* Desktop content container */
 @media only screen and (min-width: 1024px) {
   .content-container {
     display: flex;
@@ -151,6 +155,7 @@ body {
     margin-left: 10%;
   }
 }
+/* New tweet */
 .new-tweet {
   display: flex;
   flex-direction: column;
@@ -205,13 +210,14 @@ body {
   font-size: 0.8rem;
 }
 
-/* desktop styles */
+/* Desktop new tweet */
 @media only screen and (min-width: 1024px) {
   .new-tweet {
     margin: 0;
     margin-bottom: 3rem;
   }
 }
+/* Tweets container */
 .tweets-container {
   display: flex;
   flex-direction: column;
@@ -275,13 +281,14 @@ body {
   color: #dfbf09;
 }
 
-/* desktop styles */
+/* Desktop tweets container */
 @media only screen and (min-width: 1024px) {
   .tweets-container .tweet {
     margin: 0;
     margin-bottom: 3rem;
   }
 }
+/* Return to top button */
 #return-to-top {
   display: none;
   position: fixed;

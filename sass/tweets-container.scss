@@ -1,5 +1,6 @@
 @import "global-variables";
 
+/* Tweets container */
 .tweets-container {
   @include flex-column-center-aligned;
   width: 100%;
@@ -60,7 +61,7 @@
   }
 }
 
-/* desktop styles */
+/* Desktop tweets container */
 @media only screen and (min-width: 1024px) {
   .tweets-container {
     .tweet {

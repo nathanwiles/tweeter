@@ -1,3 +1,4 @@
+/* New tweet */
 .new-tweet {
   display: flex;
   flex-direction: column;
@@ -52,7 +53,7 @@
   font-size: 0.8rem;
 }
 
-/* desktop styles */
+/* Desktop new tweet */
 @media only screen and (min-width: 1024px) {
   .new-tweet {
     margin: 0;

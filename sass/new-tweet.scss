@@ -1,5 +1,6 @@
 @import "global-variables";
 
+/* New tweet */
 .new-tweet {
   @include flex-column-center-aligned;
   display: none;
@@ -52,7 +53,7 @@
   }
 }
 
-/* desktop styles */
+/* Desktop new tweet */
 @media only screen and (min-width: 1024px) {
   .new-tweet {
     margin: 0;

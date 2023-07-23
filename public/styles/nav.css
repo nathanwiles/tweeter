@@ -1,3 +1,4 @@
+/* Nav bar */
 .nav-bar {
   display: flex;
   flex-direction: row;
@@ -9,8 +10,8 @@
   height: 120px;
   padding: 0 1.5rem;
   color: #ffffff;
-  background-color: #4056a1;
-  border-bottom: 1px solid #545149;
+  background-color: transparent;
+  border: none;
 }
 .nav-bar .nav-new-tweet {
   display: flex;
@@ -36,10 +37,10 @@
     transform: translateY(0);
   }
 }
-/* tablet nav */
-@media only screen and (max-width: 1023px) {
+/* Desktop nav */
+@media only screen and (min-width: 1024px) {
   .nav-bar {
-    background-color: transparent;
-    border: none;
+    background-color: #4056a1;
+    border-bottom: 1px solid #545149;
   }
 }

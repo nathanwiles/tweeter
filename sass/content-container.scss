@@ -1,4 +1,6 @@
 @import "global-variables";
+
+/* Content container */
 .content-container {
  
   @include flex-column-center-aligned;
@@ -12,7 +14,7 @@
   width: 90%;
 }
 
-/* desktop styles */
+/* Desktop content container */
 @media only screen and (min-width: 1024px) {
   
   .content-container {

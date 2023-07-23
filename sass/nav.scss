@@ -1,5 +1,6 @@
 @import "global-variables";
 
+/* Nav bar */
 .nav-bar {
   @include flex-row-space-between;
   width: 100%;
@@ -8,9 +9,9 @@
   height: $nav-bar-height;
   padding: 0 1.5rem;
   color: $inverse-text-color;
-  background-color: $tweeter-blue;
-  border-bottom: 1px solid $text-color;
-
+  background-color: transparent;
+  border: none;
+  
   .nav-new-tweet {
     @include flex-column-center-aligned;
   }
@@ -37,10 +38,10 @@
   }
 }
 
-/* tablet nav */
-@media only screen and (max-width: 1023px) {
+/* Desktop nav */
+@media only screen and (min-width: 1024px) {
   .nav-bar {
-    background-color: transparent;
-    border: none;
+    background-color: $tweeter-blue;
+    border-bottom: 1px solid $text-color;
   }
 }

@@ -1,3 +1,4 @@
+/* User profile */
 .user-profile {
   display: flex;
   flex-direction: column;
@@ -15,7 +16,7 @@
   text-align: center;
 }
 
-/* desktop styles */
+/* Desktop user profile */
 @media only screen and (min-width: 1024px) {
   .user-profile {
     display: flex;

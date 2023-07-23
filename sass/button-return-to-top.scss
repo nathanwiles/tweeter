@@ -1,5 +1,6 @@
 @import "global-variables";
 
+/* Return to top button */
 #return-to-top {
   display: none;
   position: fixed;
@@ -12,6 +13,7 @@
   background-color: $pretty-red;
   color: $inverse-text-color;
 }
+
 #return-to-top:hover {
   cursor: pointer;
   box-shadow: $hover-shadow;

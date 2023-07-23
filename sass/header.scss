@@ -1,5 +1,6 @@
 @import "global-variables";
 
+/* User profile */
 .user-profile {
   @include flex-column-hor-vert-aligned;
   width: 100%;
@@ -14,8 +15,7 @@
   }
 }
 
-/* desktop styles */
-
+/* Desktop user profile */
 @media only screen and (min-width: 1024px) {
   .user-profile {
     @include flex-row-center-aligned;

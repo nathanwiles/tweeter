@@ -1,3 +1,4 @@
+/* Tweets container */
 .tweets-container {
   display: flex;
   flex-direction: column;
@@ -61,7 +62,7 @@
   color: #dfbf09;
 }
 
-/* desktop styles */
+/* Desktop tweets container */
 @media only screen and (min-width: 1024px) {
   .tweets-container .tweet {
     margin: 0;

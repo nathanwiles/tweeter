@@ -10,8 +10,8 @@
   #return-to-top {
     display: none;
     position: fixed;
-    bottom: 2vh;
-    right: 2vw;
+    bottom: 4rem;
+    right: 2rem;
     height: 4rem;
     width: 4rem;
     border-radius: 50%;
@@ -46,7 +46,7 @@
     padding: 5%;
   }
   .timeline {
-    height: 60vh;
+    height: 80vh;
     overflow: scroll;
     margin: 0;
     margin-left:  10%;

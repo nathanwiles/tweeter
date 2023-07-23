@@ -31,6 +31,7 @@ body {
 }
 
 body {
+  overflow: scroll;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,4 +40,11 @@ body {
 
 .red {
   color: #cb0505
+}
+
+/* desktop styles */
+@media only screen and (min-width: 1024px) {
+  body {
+    overflow: hidden;
+  }
 }

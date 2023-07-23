@@ -1,0 +1,73 @@
+@import "global-variables";
+
+.tweets-container {
+  @include flex-column-center-aligned;
+  width: 100%;
+  .tweet:hover {
+    box-shadow: $hover-shadow;
+  }
+  .tweet {
+    @include flex-column-center-aligned;
+    border: #393731 0.2rem solid;
+    margin-top: 3rem;
+    padding: 0.5rem;
+    width: 100%;
+
+    .user-info {
+      @include flex-row-center-aligned;
+    }
+    .user-name {
+      margin: 0 .5rem;
+    }
+
+    .user-handle {
+      font-weight: 600;
+      color: #aeb2c0;
+    }
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+    }
+    .text {
+      display: flex;
+      padding: 0 0.5rem;
+      width: 100%;
+      font-weight: 600;
+      border-bottom: 5px solid #393731;
+    }
+    .footer {
+      display: flex;
+      padding: 0.5rem;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      
+      .tweet-icons .icon {
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        align-content: center;
+        color: #4056a1;
+      }
+      .tweet-icons .icon:hover {
+        color: #dfbf09;
+      }
+    }
+  }
+}
+
+/* desktop styles */
+@media only screen and (min-width: 1024px) {
+  .tweets-container {
+    .tweet {
+    margin: 0;
+    margin-bottom: 3rem;
+    }
+  }
+  
+}
+

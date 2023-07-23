@@ -12,6 +12,7 @@
 .user-profile .user-name h2 {
   font-size: 2rem;
   margin: 0;
+  text-align: center;
 }
 
 /* desktop styles */
@@ -25,8 +26,5 @@
   }
   .user-profile .profile-container {
     margin: 1.5rem;
-  }
-  .user-profile .profile-pic {
-    margin-top: 0;
   }
 }

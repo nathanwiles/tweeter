@@ -10,6 +10,7 @@
   .user-name h2 {
     font-size: 2rem;
     margin: 0;
+    text-align: center;
   }
 }
 
@@ -20,13 +21,9 @@
     @include flex-row-center-aligned;
     width: 60%;
     height: 400px;
-    
 
     .profile-container {
       margin: 1.5rem;
-    }
-    .profile-pic {
-      margin-top: 0;
     }
   }
 }

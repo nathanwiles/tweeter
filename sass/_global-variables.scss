@@ -1,0 +1,57 @@
+// Colors
+$pretty-red: #d41616;
+$pretty-red-hover: #921414;
+$inverse-text-color: #ffffff;
+$page-background-color: #f4f1ec;
+$tweeter-blue: #4056a1;
+$text-color: #545149;
+$profile-background-color: #a36d00;
+
+// Fonts
+$bungee-font: "Bungee", sans-serif;
+$tweeter-page-font: "Source Sans 3", sans-serif;
+$regular-font-weight: 300;
+$bold-font-weight: 600;
+
+// Images 
+$profile-background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+
+// Shadows 
+$hover-shadow: #939290 0.2rem 0.2rem 0.2rem;
+
+// Sizes
+$nav-bar-height: 120px;
+
+// Mixins
+
+@mixin flex-column{
+  display: flex;
+  flex-direction: column; 
+}
+
+@mixin flex-column-center-aligned {
+  @include flex-column;
+  align-items: center;
+}
+@mixin flex-column-hor-vert-aligned{
+  @include flex-column-center-aligned();
+  justify-content: center;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-row-center-aligned {
+  @include flex-row;
+  align-items: center;
+}
+@mixin flex-row-space-between {
+  @include flex-row-center-aligned();
+  justify-content: space-between;
+}
+
+
+
+

@@ -1,3 +1,4 @@
+@import "global-variables";
 /*
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
  * https://css-tricks.com/international-box-sizing-awareness-day/
@@ -17,8 +18,8 @@ html {
  */
 
 body {
-  color: #545149;
-  background-color: #f4f1ec;
+  color: $text-color;
+  background-color: $page-background-color;
   font-size: 24px;
 }
 
@@ -27,19 +28,13 @@ body {
  */
 
 * {
-  font-family: "Source Sans 3", sans-serif;
+  font-family: $tweeter-page-font;
 }
 
 body {
+  @include flex-column-center-aligned;
   overflow: scroll;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
-}
-
-.red {
-  color: #cb0505
 }
 
 /* desktop styles */

@@ -6,6 +6,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
@@ -15,7 +16,6 @@ html {
 /*
  * Global layout stuff
  */
-
 body {
   color: #545149;
   background-color: #f4f1ec;
@@ -25,21 +25,16 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-
 * {
   font-family: "Source Sans 3", sans-serif;
 }
 
 body {
-  overflow: scroll;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: scroll;
   width: 100%;
-}
-
-.red {
-  color: #cb0505
 }
 
 /* desktop styles */

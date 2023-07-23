@@ -3,7 +3,7 @@ import { helpers } from "../helpers/helpers-index.js";
 /**
  * @requires jQuery
  * 
- * @description #new-tweet-form submission handler. checks if the tweet is valid.
+ * @eventHandler on #new-tweet-form submission. checks if the tweet is valid.
  * 
  * @valid_tweet 
  * @side_effect sends an ajax POST request to '/tweets'.
@@ -14,9 +14,7 @@ import { helpers } from "../helpers/helpers-index.js";
  * @returns {void}
  */
 
-$(document).ready(function () {
-
-  $("#new-tweet-form").on("submit", function (event) {
+const submitTweet = () => $("#new-tweet-form").on("submit", function (event) {
     event.preventDefault();
     const tweetText = $("#new-tweet-text").val();
     if (helpers.validateTweet(tweetText)) {
@@ -32,4 +30,4 @@ $(document).ready(function () {
       });
     }
   });
-});
+export { submitTweet };

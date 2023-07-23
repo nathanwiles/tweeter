@@ -1,6 +1,13 @@
 /* global $ */
 
-$(document).ready(function () {
+/**
+ * @event_handler listens for click on the return to top button.
+ * 
+ * @response scrolls to the top of the page.
+ * @responce focuses the new tweet text area.
+ */
+
+export const returnToTop = () => {
   const $btn = $("#return-to-top");
   const $timeline = $(".timeline");
   const $window = $(window);
@@ -37,4 +44,5 @@ $(document).ready(function () {
       $newTweet.show().slideDown().closest($("textarea").focus());
     }
   });
-});
+};
+

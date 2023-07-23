@@ -137,7 +137,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
+  width: 100%;
+  padding: 0 5% 5%;
 }
 
 /* Desktop content container */
@@ -152,9 +153,9 @@ body {
     padding: 5%;
   }
   .timeline {
-    height: 80vh;
+    height: 60vh;
     overflow: scroll;
-    margin: 0;
+    padding: 0;
     margin-left: 10%;
   }
 }

@@ -12,7 +12,8 @@
 
 .timeline {
   @include flex-column-center-aligned;
-  width: 90%;
+  width: 100%;
+  padding: 0 5% 5%;
 }
 
 /* Desktop content container */
@@ -24,9 +25,13 @@
     padding: 5%;
   }
   .timeline {
-    height: 80vh;
+    height: 60vh;
     overflow: scroll;
-    margin: 0;
+    padding: 0;
     margin-left: 10%;
+    mask-image: linear-gradient(to bottom, black calc(100% - 48px), transparent 100%)
+    
+    
+    
   }
 }

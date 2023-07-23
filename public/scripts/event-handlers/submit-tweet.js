@@ -1,4 +1,4 @@
-import { helpers } from "../helpers/index.js";
+import { helpers } from "../helpers/helpers-index.js";
 
 /**
  * @requires jQuery

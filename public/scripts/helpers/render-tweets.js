@@ -1,4 +1,4 @@
-import { helpers } from "./index.js";
+import { helpers } from "./helpers-index.js";
 
 /**
  * @requires jQuery
@@ -19,5 +19,4 @@ export const renderTweets = function (data) {
     const $tweet = helpers.createTweetElement(tweet);
     $("#tweets-container").prepend($tweet);
   }
-  
 };

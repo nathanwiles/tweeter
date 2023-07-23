@@ -18,7 +18,7 @@
       @include flex-row-center-aligned;
     }
     .user-name {
-      margin: 0 .5rem;
+      margin: 0 0.5rem;
     }
 
     .user-handle {
@@ -46,7 +46,7 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      
+
       .tweet-icons .icon {
         flex-direction: row;
         justify-content: end;
@@ -65,10 +65,8 @@
 @media only screen and (min-width: 1024px) {
   .tweets-container {
     .tweet {
-    margin: 0;
-    margin-bottom: 3rem;
+      margin: 0;
+      margin-bottom: 3rem;
     }
   }
-  
 }
-

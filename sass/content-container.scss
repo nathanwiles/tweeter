@@ -2,11 +2,12 @@
 
 /* Content container */
 .content-container {
- 
   @include flex-column-center-aligned;
   width: 100%;
   height: 100%;
-
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .timeline {
@@ -16,7 +17,6 @@
 
 /* Desktop content container */
 @media only screen and (min-width: 1024px) {
-  
   .content-container {
     @include flex-row-space-between;
     align-items: flex-start;
@@ -27,7 +27,6 @@
     height: 80vh;
     overflow: scroll;
     margin: 0;
-    margin-left:  10%;
-
+    margin-left: 10%;
   }
 }

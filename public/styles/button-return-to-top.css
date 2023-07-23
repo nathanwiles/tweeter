@@ -1,0 +1,24 @@
+/* Colors */
+/* Fonts */
+/* Images */
+/* Shadows */
+/* Sizes */
+/* Mixins */
+#return-to-top {
+  display: none;
+  position: fixed;
+  bottom: 4rem;
+  right: 2rem;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: none;
+  background-color: #d41616;
+  color: #ffffff;
+}
+
+#return-to-top:hover {
+  cursor: pointer;
+  box-shadow: #939290 0.2rem 0.2rem 0.2rem;
+  background-color: #921414;
+}

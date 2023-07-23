@@ -1,0 +1,19 @@
+@import "global-variables";
+
+#return-to-top {
+  display: none;
+  position: fixed;
+  bottom: 4rem;
+  right: 2rem;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: none;
+  background-color: $pretty-red;
+  color: $inverse-text-color;
+}
+#return-to-top:hover {
+  cursor: pointer;
+  box-shadow: $hover-shadow;
+  background-color: $pretty-red-hover;
+}

@@ -20,8 +20,7 @@ $(document).ready(function () {
     $btn.click(function () {
       if($window.width() < 1024)
         $('body, html').animate({ scrollTop: 0}, 'slow');
-        $timeline.animate({ scrollTop: 0 }, 500);
-        $newTweet.show().slideDown();
+        $newTweet.show().slideDown().closest($('textarea').focus());
 
 
     
@@ -39,7 +38,7 @@ $(document).ready(function () {
   $btn.click(function () {
     if($window.width() >= 1024)
     $timeline.animate({ scrollTop: 0 }, 500);
-    $newTweet.show().slideDown();
+    $newTweet.show().slideDown().closest($('textarea').focus());
 
   });
 });

@@ -7,7 +7,8 @@
   font-weight: bold;
 
   #new-tweet-form {
-
+    display: flex;
+    flex-direction: column;
     #new-tweet-text.red-border-bottom {
       border-bottom: #ff0000 0.2em solid;
     }

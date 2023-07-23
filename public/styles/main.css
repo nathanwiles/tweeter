@@ -1,4 +1,5 @@
 .content-container {
+ 
   display: flex;
   margin: auto;
   width: 100%;
@@ -11,8 +12,8 @@
     position: fixed;
     bottom: 2vh;
     right: 2vw;
-    height: 3rem;
-    width: 3rem;
+    height: 4rem;
+    width: 4rem;
     border-radius: 50%;
     border: none;
     background-color: red;
@@ -21,6 +22,7 @@
   #return-to-top:hover {
     cursor: pointer;
     box-shadow: .2rem .2rem .2rem #939290;
+    background-color: rgb(121, 3, 3);
   }
 }
 

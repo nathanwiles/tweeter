@@ -1,10 +1,13 @@
+/* globals $ */
+
 import { helpers } from "./helpers-index.js";
+
 /**
  * @param {string} tweetText
  *
  * @description validates the tweet text and flags the error message if invalid.
  *
- * @returns {string} error message or true if valid.
+ * @returns {string} boolean
  */
 
 export const validateTweet = function (tweetText) {

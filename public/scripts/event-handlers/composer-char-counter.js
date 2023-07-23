@@ -8,6 +8,7 @@
  * @responce clears error styling if the number of characters meet the requirements.
  *
  */
+
 export const charCounter = () =>
   $("#new-tweet-text").on("input", function () {
     const tweetLength = this.value.length;
@@ -27,4 +28,3 @@ export const charCounter = () =>
       invalidTextAlert.hide().slideUp().empty();
     }
   });
-

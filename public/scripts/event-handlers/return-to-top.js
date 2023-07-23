@@ -2,7 +2,7 @@
 
 /**
  * @event_handler listens for click on the return to top button.
- * 
+ *
  * @response scrolls to the top of the page.
  * @responce focuses the new tweet text area.
  */
@@ -45,4 +45,3 @@ export const returnToTop = () => {
     }
   });
 };
-

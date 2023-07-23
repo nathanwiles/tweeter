@@ -1,17 +1,14 @@
+/* globals $ */
+
 import { helpers } from "./helpers-index.js";
 
 /**
- * @requires jQuery
- * @requires ./helpers/create-tweet-element
- *
  * @param {array} tweets
  * @description Loops through tweets calling createTweetElement() for each tweet.
  * @side_effect appends each tweet to the #tweets-container.
  *
  * @returns {void}
  */
-
-
 export const renderTweets = function (data) {
   $("#tweets-container").empty();
 

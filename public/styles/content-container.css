@@ -30,10 +30,9 @@
     padding: 5%;
   }
   .timeline {
-    height: 60vh;
+    height: 80vh;
     overflow: scroll;
     padding: 0;
     margin-left: 10%;
-    mask-image: linear-gradient(to bottom, black calc(100% - 48px), transparent 100%);
   }
 }

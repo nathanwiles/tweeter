@@ -1,32 +1,30 @@
+@import "global-variables";
+
 .nav-bar {
-  display: flex;
+  @include flex-row-space-between;
+  width: 100%;
   position: fixed;
   top: 0;
-  width: 100%;
-  color: #ffffff;
-  justify-content: space-between;
-  align-items: center;
+  height: $nav-bar-height;
   padding: 0 1.5rem;
-  background-color: #4056a1;
-  height: 120px;
-  border-bottom: 1px solid #545149;
+  color: $inverse-text-color;
+  background-color: $tweeter-blue;
+  border-bottom: 1px solid $text-color;
 
   .nav-new-tweet {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center-aligned;
   }
   .bouncing-arrow {
     font-size: 1rem;
-    color: red;
+    color: $pretty-red;
     position: relative;
     animation: bounce 1s infinite;
   }
   
   
   .big-logo {
+    font-family: $bungee-font;
     font-size: 2rem;
-    font-family: "Bungee", sans-serif;
   }
 }
 

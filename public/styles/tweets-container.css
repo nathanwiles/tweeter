@@ -1,0 +1,76 @@
+/* Colors */
+/* Fonts */
+/* Images */
+/* Shadows */
+/* Sizes */
+/* Mixins */
+.tweets-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.tweets-container .tweet:hover {
+  box-shadow: #939290 0.2rem 0.2rem 0.2rem;
+}
+.tweets-container .tweet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: #393731 0.2rem solid;
+  margin-top: 3rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+.tweets-container .tweet .user-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.tweets-container .tweet .user-name {
+  margin: 0 0.5rem;
+}
+.tweets-container .tweet .user-handle {
+  font-weight: 600;
+  color: #aeb2c0;
+}
+.tweets-container .tweet .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.tweets-container .tweet .text {
+  display: flex;
+  padding: 0 0.5rem;
+  width: 100%;
+  font-weight: 600;
+  border-bottom: 5px solid #393731;
+}
+.tweets-container .tweet .footer {
+  display: flex;
+  padding: 0.5rem;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.tweets-container .tweet .footer .tweet-icons .icon {
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  align-content: center;
+  color: #4056a1;
+}
+.tweets-container .tweet .footer .tweet-icons .icon:hover {
+  color: #dfbf09;
+}
+
+/* desktop styles */
+@media only screen and (min-width: 1024px) {
+  .tweets-container .tweet {
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+}

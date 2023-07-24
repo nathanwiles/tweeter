@@ -20,16 +20,21 @@
     #new-tweet-text.dark-border-bottom {
       border-bottom: $text-color 0.2em solid;
     }
-
+  
     #new-tweet-text {
-      width: 100%;
-      height: 50px;
+      width: 100%;;
+      height: 1.75em;
       resize: none;
       border: none;
       color: $text-color;
       font-weight: $regular-font-weight;
       background-color: $page-background-color;
     }
+    
+    #new-tweet-text:focus {
+      outline: none;
+    }
+    
     .tweet-ui {
       @include flex-row-space-between;
       font-family: $bungee-font;

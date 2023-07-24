@@ -9,8 +9,8 @@ Server side code was provided by Lighthouse Labs. Client side was built by Natha
 1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
 2. Clone your repository onto your local device.
 3. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
-4. Go to <http://localhost:8080/> in your browser.
+4. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
+5. Go to <http://localhost:8080/> in your browser.
 
 ## Dependencies
 
@@ -22,13 +22,24 @@ Server side code was provided by Lighthouse Labs. Client side was built by Natha
 
 ## Screenshots
 
-!["Screenshot of mobile view"]()
-!["Screenshot of scrolled mobile view"]()
-!["Screenshot of mobile new tweet"]()
-!["Screenshot of desktop view"]()
-!["Screenshot of scrolled desktop"]()
-!["Screenshot of desktop new tweet"]()
-!["Screenshot of empty tweet error"]()
-!["Screenshot of tweet too log error"]()
+### Mobile View
+
+!["Screenshot of mobile view"](https://github.com/nathanwiles/tweeter/blob/master/docs/tweeter-mobile-home.png?raw=true)
 
 
+!["Screenshot of scrolled mobile view"](https://github.com/nathanwiles/tweeter/blob/master/docs/tweeter-mobile-scrolled-down.png?raw=true)
+
+### Desktop View
+
+!["Screenshot of desktop view"](https://github.com/nathanwiles/tweeter/blob/master/docs/tweeter-desktop-home.png?raw=true)
+
+
+!["Screenshot of scrolled desktop"](https://github.com/nathanwiles/tweeter/blob/master/docs/tweeter-desktop-scrolled-down.png?raw=true)
+
+### New Tweet Form
+
+!["Screenshot of new tweet"](https://github.com/nathanwiles/tweeter/blob/master/docs/tweeter-new-tweet.png?raw=true)
+
+!["Screenshot of empty tweet error"](https://github.com/nathanwiles/tweeter/blob/master/docs/tweeter-empty-tweet-error.png?raw=true)
+
+!["Screenshot of tweet too log error"](https://github.com/nathanwiles/tweeter/blob/master/docs/tweeter-too-long-tweet-error.png?raw=true)
